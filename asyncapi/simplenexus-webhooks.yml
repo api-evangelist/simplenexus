@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.ncinomortgage.com/mortgage
+type: Webhooks
+note: >-
+  The nCino Mortgage API (successor to the legacy SimpleNexus API) documents a
+  webhook surface. Per the developer portal overview it ships "a new Webhook
+  Flow with Increased Security, delivery retries and support for Filtering
+  Webhook Events for targeted notifications." Webhook subscription/management is
+  part of the initial Organization & User Management release. No published
+  AsyncAPI document was found; this captures the webhook surface only. Specific
+  event topic names were not enumerated in the public docs excerpt (they live in
+  the webhooks reference) and are NOT fabricated here.
+webhooks:
+  management: API-managed (webhook management endpoints in the Organization & User Management release)
+  security: Increased security on delivery (signature/verification per the "new Webhook Flow")
+  delivery_retries: true
+  event_filtering: true      # "Filtering Webhook Events for targeted notifications"
+  docs: https://developer.ncinomortgage.com/mortgage/reference
+  events: []                 # not enumerated in the public docs excerpt; left empty rather than invented
+asyncapi_spec: null          # no published AsyncAPI document located

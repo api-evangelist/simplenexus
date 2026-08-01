@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.ncinomortgage.com/mortgage
+note: >-
+  Cross-cutting API conventions for the nCino Mortgage API (successor to the
+  legacy SimpleNexus API), from the published developer portal. Fields left null
+  where the provider does not publish the detail — not inferred.
+authentication:
+  style: oauth2
+  credentials: API Credentials issued via developer portal
+  token_expiration: true
+  docs: https://developer.ncinomortgage.com/mortgage/docs/authentication-1
+transport:
+  protocol: https
+  base_url: https://api.ncinomortgage.com
+  format: json
+webhooks:
+  supported: true
+  event_filtering: true
+  delivery_retries: true
+  security: increased-security webhook flow (signature verification)
+idempotency: null            # no idempotency-key contract documented in the public docs
+pagination: null             # pagination scheme not published in the docs excerpt
+versioning:
+  style: portal-versioned
+  note: legacy SimpleNexus API (v0-SNAPI) superseded by nCino Mortgage API
+error_envelope: null         # not documented / no OpenAPI captured
+rate_limiting: null          # not documented in the public docs excerpt
+cross_links:
+  authentication: authentication/simplenexus-authentication.yml
+  lifecycle: lifecycle/simplenexus-lifecycle.yml
+  webhooks: asyncapi/simplenexus-webhooks.yml

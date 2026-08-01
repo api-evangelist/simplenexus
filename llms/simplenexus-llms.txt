@@ -1,0 +1,28 @@
+# SimpleNexus (now nCino Mortgage)
+
+> SimpleNexus was a mobile-first homeownership / mortgage platform (backed by Insight Partners) acquired by nCino. Its product is now delivered as the nCino Mortgage Suite, and its developer API — explicitly built to "replace the legacy SimpleNexus API" — is published as the nCino Mortgage API. The API covers Organization & User Management (companies, branches, users) and a modern webhook flow, secured with OAuth 2.0.
+
+## APIs
+- [nCino Mortgage API (formerly SimpleNexus API)](https://developer.ncinomortgage.com/mortgage): OAuth 2.0 REST API; base URL https://api.ncinomortgage.com. Initial release covers company administration, user provisioning, branch management, and webhook management.
+
+## Docs
+- [Developer Portal](https://developer.ncinomortgage.com/mortgage)
+- [Getting Started](https://developer.ncinomortgage.com/mortgage/docs/getting-started)
+- [Authentication](https://developer.ncinomortgage.com/mortgage/docs/authentication-1)
+- [Obtaining API Credentials](https://developer.ncinomortgage.com/mortgage/docs/obtaining-an-api-key)
+- [API Reference](https://developer.ncinomortgage.com/mortgage/reference)
+- [Recipes](https://developer.ncinomortgage.com/mortgage/recipes)
+- [Postman Collection](https://developer.ncinomortgage.com/mortgage/docs/postman-collection)
+- [Legacy SimpleNexus API (v0-SNAPI)](https://developer.ncinomortgage.com/mortgage/v0-SNAPI)
+- [Support](https://mortgagehelp.ncino.com)
+
+## Product
+- [nCino Mortgage Suite](https://www.ncino.com/mortgage/us)
+
+## Artifacts
+- Authentication profile: authentication/simplenexus-authentication.yml
+- Webhooks surface: asyncapi/simplenexus-webhooks.yml
+- Lifecycle / deprecation: lifecycle/simplenexus-lifecycle.yml
+- Conventions: conventions/simplenexus-conventions.yml
+- Conformance: conformance/simplenexus-conformance.yml
+- Well-known probe: well-known/simplenexus-well-known.yml

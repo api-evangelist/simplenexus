@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.ncinomortgage.com/mortgage/docs/authentication-1
+docs: https://developer.ncinomortgage.com/mortgage/docs/authentication-1
+note: >-
+  SimpleNexus's API is now delivered as the nCino Mortgage API, which explicitly
+  "replaces the legacy SimpleNexus API." The new API uses OAuth 2.0. Exact grant
+  type, token endpoint, header format, and scope list were not exposed in the
+  public docs excerpt (they sit behind the Authentication and "Obtaining API
+  Credentials" guides). Captured at the type level from the published docs; not
+  fabricated beyond what the provider states.
+summary:
+  types: [oauth2]
+  oauth2_flows: []          # documented as an "Authorization Flow" but the specific grant was not published in the excerpt
+  api_key_in: []
+schemes:
+  - name: OAuth2
+    type: oauth2
+    documented: true
+    token_expiration: true   # docs state tokens expire (improvement over legacy SimpleNexus API)
+    credentials: API Credentials issued via the developer portal
+    credentials_docs: https://developer.ncinomortgage.com/mortgage/docs/obtaining-an-api-key
+    sources: [https://developer.ncinomortgage.com/mortgage/docs/authentication-1]
+legacy:
+  name: SimpleNexus API (v0-SNAPI)
+  status: deprecated
+  reference: https://developer.ncinomortgage.com/mortgage/v0-SNAPI

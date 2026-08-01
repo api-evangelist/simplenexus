@@ -1,26 +1,110 @@
 aid: simplenexus
 name: SimpleNexus
-description: SimpleNexus is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  SimpleNexus was a mobile-first digital homeownership and mortgage platform,
+  backed by Insight Partners, that connected loan officers, borrowers, real
+  estate agents, and settlement teams across the loan lifecycle. It was acquired
+  by nCino and its product is now delivered as the nCino Mortgage Suite. The
+  developer API has been rehosted at developer.ncinomortgage.com as the nCino
+  Mortgage API, which is explicitly built to replace the legacy SimpleNexus API
+  (v0-SNAPI). The current API is an OAuth 2.0 REST API (base URL
+  https://api.ncinomortgage.com) whose initial release covers Organization and
+  User Management — company administration, branch management, user
+  provisioning — plus a modern webhook flow with delivery retries, event
+  filtering, and increased security.
 url: https://raw.githubusercontent.com/api-evangelist/simplenexus/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://images.simplenexus.com/company/logo/111230/04953f06-848b-4695-9610-f1deeb015708.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: ncino
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Mortgage
+- Lending
+- Fintech
+- Financial Services
+- Homeownership
+- Real Estate
+- Webhooks
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: nCino Mortgage API (formerly SimpleNexus API)
+  description: >-
+    OAuth 2.0 REST API that replaces the legacy SimpleNexus API. The initial
+    release covers Organization and User Management (companies, branches, users)
+    and a modern webhook flow with delivery retries, event filtering, and
+    increased security.
+  humanURL: https://developer.ncinomortgage.com/mortgage
+  baseURL: https://api.ncinomortgage.com
+  tags:
+  - Mortgage
+  - Lending
+  - Webhooks
+  properties:
+  - type: Documentation
+    url: https://developer.ncinomortgage.com/mortgage/docs/getting-started
+  - type: APIReference
+    url: https://developer.ncinomortgage.com/mortgage/reference
+  - type: Authentication
+    url: authentication/simplenexus-authentication.yml
+  - type: Webhooks
+    url: asyncapi/simplenexus-webhooks.yml
 common:
 - type: Website
-  url: https://simplenexus.com/sn/
+  url: https://www.ncino.com/mortgage/us
+- type: DeveloperPortal
+  url: https://developer.ncinomortgage.com/mortgage
+- type: Documentation
+  url: https://developer.ncinomortgage.com/mortgage/docs/getting-started
+- type: APIReference
+  url: https://developer.ncinomortgage.com/mortgage/reference
+- type: GettingStarted
+  url: https://developer.ncinomortgage.com/mortgage/docs/getting-started
+- type: Support
+  url: https://mortgagehelp.ncino.com
+- type: Postman
+  url: https://developer.ncinomortgage.com/mortgage/docs/postman-collection
+- type: Authentication
+  url: authentication/simplenexus-authentication.yml
+- type: Webhooks
+  url: asyncapi/simplenexus-webhooks.yml
+- type: Lifecycle
+  url: lifecycle/simplenexus-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/simplenexus-lifecycle.yml
+- type: Conformance
+  url: conformance/simplenexus-conformance.yml
+- type: Conventions
+  url: conventions/simplenexus-conventions.yml
+- type: WellKnown
+  url: well-known/simplenexus-well-known.yml
+- type: LLMsTxt
+  url: llms/simplenexus-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

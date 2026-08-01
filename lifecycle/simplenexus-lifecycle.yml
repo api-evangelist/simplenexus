@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.ncinomortgage.com/mortgage
+note: >-
+  SimpleNexus was acquired by nCino and its product is now the nCino Mortgage
+  Suite; the developer API has been rehosted at developer.ncinomortgage.com.
+  The legacy SimpleNexus API is explicitly superseded by the new nCino Mortgage
+  API, which is the effective deprecation of the SimpleNexus API line.
+versioning:
+  scheme: portal-versioned
+  current: nCino Mortgage API (v0)
+  legacy: v0-SNAPI (legacy SimpleNexus API)
+  docs: https://developer.ncinomortgage.com/mortgage/reference
+deprecation:
+  deprecated_api: SimpleNexus API (v0-SNAPI)
+  superseded_by: nCino Mortgage API
+  policy_url: https://developer.ncinomortgage.com/mortgage
+  legacy_reference: https://developer.ncinomortgage.com/mortgage/v0-SNAPI
+  sunset_header: null        # not documented in the public excerpt
+status_page: null            # no dedicated status page located; support via mortgagehelp.ncino.com
+support: https://mortgagehelp.ncino.com
+deprecated_operations: []    # no OpenAPI captured to derive operation-level deprecation

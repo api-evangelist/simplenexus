@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.ncinomortgage.com/mortgage/docs/authentication-1
+note: >-
+  Standards conformance for the nCino Mortgage API (successor to the legacy
+  SimpleNexus API), asserted from the published developer docs. Only oauth2 is
+  positively evidenced; other standards left unasserted rather than guessed.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: developer docs state the API authenticates with OAuth 2.0 (Authorization Flow, expiring tokens)
+  - id: rest
+    conforms: true
+    evidence: resource-oriented HTTP JSON API (e.g. GET /companies, DELETE /branches/{branch_id}/images/{image_key})
+  - id: webhooks
+    conforms: true
+    evidence: documented webhook flow with delivery retries, event filtering, and increased security
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: not documented / no OpenAPI captured to confirm application/problem+json
+  - id: oidc
+    conforms: false
