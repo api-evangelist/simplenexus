@@ -1,18 +1,20 @@
 generated: '2026-07-21'
 method: probed
 host: https://simplenexus.com
-note: >-
-  simplenexus.com now 301-redirects to https://www.ncino.com/mortgage/us (the
-  SimpleNexus brand was absorbed into the nCino Mortgage Suite). No /.well-known
-  discovery documents were served for the simplenexus.com host. The live API is
-  at https://api.ncinomortgage.com and the developer portal at
-  https://developer.ncinomortgage.com/mortgage.
-documents:
-  - path: /.well-known/security.txt
-    status: 404
-  - path: /llms.txt
-    status: 301            # redirects off-host to ncino.com; no simplenexus llms.txt served
+note: simplenexus.com now 301-redirects to https://www.ncino.com/mortgage/us (the SimpleNexus brand was
+  absorbed into the nCino Mortgage Suite). No /.well-known discovery documents were served for the simplenexus.com
+  host. The live API is at https://api.ncinomortgage.com and the developer portal at https://developer.ncinomortgage.com/mortgage.
 redirect:
   from: https://simplenexus.com/
   to: https://www.ncino.com/mortgage/us
   status: 301
+hosts:
+- host: https://simplenexus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
