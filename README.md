@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SimpleNexus is a company surfaced as a portfolio company of insight-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+SimpleNexus was a mobile-first digital homeownership and mortgage platform, backed by Insight Partners, that connected loan officers, borrowers, real estate agents, and settlement teams across the loan lifecycle. It was acquired by nCino and its product is now delivered as the nCino Mortgage Suite. The developer API has been rehosted at developer.ncinomortgage.com as the nCino Mortgage API, which is explicitly built to replace the legacy SimpleNexus API (v0-SNAPI). The current API is an OAuth 2.0 REST API (base URL https://api.ncinomortgage.com) whose initial release covers Organization and User Management — company administration, branch management, user provisioning — plus a modern webhook flow with delivery retries, event filtering, and increased security.
 
-Backed by: insight-partners — https://simplenexus.com/sn/
+**Areas:** Company · Mortgage · Lending · Fintech · Financial Services · Homeownership · Real Estate · Webhook
+
+## SimpleNexus on APIs.io
+
+Everything profiled for SimpleNexus is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/simplenexus/](https://apis.io/providers/simplenexus/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [nCino Mortgage API (formerly SimpleNexus API)](https://apis.io/apis/simplenexus/ncino-mortgage-api-formerly-simplenexus-api/) — OAuth 2.0 REST API that replaces the legacy SimpleNexus API. The initial release covers Organization and User Management (companies, branches, users) and a…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Simplenexus Webhooks](https://apis.io/asyncapis/simplenexus/simplenexus-webhooks/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Simplenexus Authentication](https://apis.io/security/simplenexus/simplenexus-authentication/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ncino.com/mortgage/us)
+- [Documentation](https://developer.ncinomortgage.com/mortgage/docs/getting-started)
+- [Getting started](https://developer.ncinomortgage.com/mortgage/docs/getting-started)
+- [API reference](https://developer.ncinomortgage.com/mortgage/reference)
+- [Support](https://mortgagehelp.ncino.com)
+
+## API Evangelist rating
+
+**Kin Score 25.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 0.0 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/simplenexus/](https://apis.io/providers/simplenexus/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SimpleNexus: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/simplenexus/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
